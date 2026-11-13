@@ -14,7 +14,7 @@
   * `zoxide` (스마트 디렉터리 점프: `z <폴더명>`)
   * `fzf` + `fd` (초고속 대화형 파일/히스토리 역방향 검색: `Ctrl + R`)
 * **Windows (PowerShell 7)**:
-  * `Tokyo Night` 테마 + 70% 아크릴 블러(Acrylic)
+  * `Dark+` 테마 (VS Code 순정 다크) + 70% 아크릴 블러(Acrylic)
   * Microsoft `CompletionPredictor` + Fish 스타일 고스트 텍스트 인라인 추천
   * Zsh 스타일 문법 하이라이팅 (정상 명령어 🟢초록색)
 * **macOS (Zsh)**:
