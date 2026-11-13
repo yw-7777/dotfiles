@@ -24,13 +24,14 @@ Remove-Item $tempZip -Force -ErrorAction SilentlyContinue
 Remove-Item "$env:TEMP\D2Coding" -Recurse -Force -ErrorAction SilentlyContinue
 
 # 2. 필수 CLI 도구 설치 (winget)
-Write-Host "🛠️ Installing CLI Tools (Starship, Zoxide, FZF, Bat, Eza, Fd)..." -ForegroundColor Yellow
+Write-Host "🛠️ Installing CLI Tools (Starship, Zoxide, FZF, Bat, Eza, Fd, Btop)..." -ForegroundColor Yellow
 winget install --id starship.starship -e --accept-source-agreements --accept-package-agreements --silent
 winget install --id ajeetdsouza.zoxide -e --accept-source-agreements --accept-package-agreements --silent
 winget install --id junegunn.fzf -e --accept-source-agreements --accept-package-agreements --silent
 winget install --id sharkdp.bat -e --accept-source-agreements --accept-package-agreements --silent
 winget install --id eza-community.eza -e --accept-source-agreements --accept-package-agreements --silent
 winget install --id sharkdp.fd -e --accept-source-agreements --accept-package-agreements --silent
+winget install --id aristocratos.btop4win -e --accept-source-agreements --accept-package-agreements --silent
 
 # 3. CompletionPredictor 파워셸 모듈 설치
 Write-Host "🧠 Installing CompletionPredictor module..." -ForegroundColor Yellow

@@ -9,6 +9,7 @@
 * **프롬프트 (공용)**: `Starship` 초경량 1줄 프롬프트 (`directory on git:branch [status] ❯`)
 * **글꼴 (공용)**: `D2CodingLigature Nerd Font` (한글/영문 1:2 황금비율 + Nerd Font 아이콘 + 코딩 기호 합자)
 * **모던 CLI 스택 (공용)**:
+  * `btop` (Rust/C++ 초고속 터미널 리소스 모니터: CPU/GPU/RAM/프로세스)
   * `eza` (Rust 파일 뷰어: `ls`, `ll`, `la`, `tree`)
   * `bat` (문법 하이라이팅 `cat`)
   * `zoxide` (스마트 디렉터리 점프: `z <폴더명>`)

@@ -21,8 +21,8 @@ else
 fi
 
 # 2. 필수 CLI 도구 및 플러그인 설치
-echo -e "\033[1;36m📦 현대적 CLI 패키지 설치 중 (Starship, Zoxide, FZF, fd, eza, bat, Zsh 플러그인)...\033[0m"
-brew install starship zoxide fzf fd eza bat zsh-autosuggestions zsh-syntax-highlighting
+echo -e "\033[1;36m📦 현대적 CLI 패키지 설치 중 (Starship, Zoxide, FZF, fd, eza, bat, btop, Zsh 플러그인)...\033[0m"
+brew install starship zoxide fzf fd eza bat btop zsh-autosuggestions zsh-syntax-highlighting
 
 # 3. D2Coding Nerd Font 설치
 echo -e "\033[1;36m🔤 D2Coding Nerd Font 설치 중...\033[0m"
