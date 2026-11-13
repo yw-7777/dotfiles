@@ -1,0 +1,36 @@
+# Starship Configuration (Ultra Clean, Minimal & No-Break Preset)
+scan_timeout = 200
+command_timeout = 500
+add_newline = false
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$character"""
+
+[character]
+success_symbol = "[❯](bold green) "
+error_symbol = "[❯](bold red) "
+vicmd_symbol = "[❮](bold yellow) "
+
+[directory]
+truncation_length = 0
+truncate_to_repo = true
+style = "bold cyan"
+read_only = " 🔒"
+format = "[$path]($style) "
+
+[git_branch]
+symbol = "git:"
+style = "bold yellow"
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+style = "bold red"
+format = '([$all_status$ahead_behind]($style) )'
+modified = "*"
+staged = "+"
+untracked = "?"
+ahead = "⇡${count}"
+behind = "⇣${count}"
