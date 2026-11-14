@@ -2,6 +2,10 @@
 # ⚡ Antigravity Ultimate Zsh-Power Developer Profile
 # ========================================================
 
+# 0. 불필요한 텔레메트리 & 업데이트 확인 비활성화 (시작 지연 방지)
+$env:POWERSHELL_TELEMETRY_OPTOUT = '1'
+$env:POWERSHELL_UPDATECHECK = 'Off'
+
 # 1. UTF-8 인코딩 기본 설정
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $OutputEncoding           = [System.Text.Encoding]::UTF8
@@ -162,3 +166,10 @@ if (Get-Command git -ErrorAction SilentlyContinue) {
     function gd { git diff @args }
     function gundo { git reset --soft HEAD~1 }   # 직전 커밋 취소 (작업 파일 보존)
 }
+
+# ========================================================
+# 🧹 10. Mac 스타일 클린 스타트업 (시작 배너/로딩안내 완전 제거)
+# ========================================================
+try {
+    Clear-Host
+} catch {}
